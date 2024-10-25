@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import PropTypes from 'prop-types';
  
 
-const Blogs = ({handleBookMark, allData,handleMarkAsRed}) => {
+const Blogs = ({handleBookMark,handleMarkAsRed}) => {
     const [blogs,setBlogs]=useState([])
     useEffect(()=>{
         const dataFetch = async()=>{
@@ -12,9 +12,10 @@ const Blogs = ({handleBookMark, allData,handleMarkAsRed}) => {
         const data = await res.json();
         // console.log(data)
         setBlogs(data)
-          allData(data)
+        
         }
         dataFetch()
+       
     },[])
     return (
         <main className="md:w-2/3">
@@ -33,7 +34,7 @@ const Blogs = ({handleBookMark, allData,handleMarkAsRed}) => {
     // Blogs:PropTypes.array.isRequired,
     handleBookMark:PropTypes.func.isRequired,
     handleMarkAsRed:PropTypes.func.isRequired,
-    allData:PropTypes.array.isRequired
+   
     
  }
 export default Blogs; 

@@ -12,16 +12,9 @@ function App() {
 
   const handleBookMark = (blog) => {
     // console.log(blog)
+    const newArray = [...clickedBlog,blog]
 
-
-    setClickedBlog(blog)
-  }
-  
-  // all data state--------------------------
-  const [allOfData, setAllOfData] = useState([])
-  const allData = (data) => {
-    //  console.log(data)
-    setAllOfData(data)
+    setClickedBlog(newArray)
   }
   
   // mark as read state---------------------
@@ -37,15 +30,13 @@ function App() {
       <div className='flex w-4/5 mx-auto'>
         <Blogs 
         handleBookMark={handleBookMark}
-         allData={allData}
+        
          handleMarkAsRed={handleMarkAsRed}
          ></Blogs>
         <div className='w-1/5 mx-auto'>
           <Bookmarks
             clickedBlog={clickedBlog}
-            key={clickedBlog.id}
-            allOfData={allOfData}
-            timeOfBlog={timeOfBlog}
+           timeOfBlog={timeOfBlog}
           ></Bookmarks>
         </div>
 
