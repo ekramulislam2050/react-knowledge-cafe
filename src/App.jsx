@@ -4,6 +4,7 @@ import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Blogs from './Components/Blogs/Blogs'
 import Header from './Components/Header/Header'
 import { useState } from 'react'
+import Bookmark from './Components/Bookmark/Bookmark'
 
 
 function App() {
@@ -19,10 +20,14 @@ function App() {
   
   // mark as read state---------------------
   const [timeOfBlog,setTimeOfBlog]=useState(0)
-  const handleMarkAsRed = (reading_time) =>{
+  const handleMarkAsRed = (reading_time,id) =>{
     // console.log(reading_time)
+    console.log(id)
     const newTime = timeOfBlog + reading_time;
     setTimeOfBlog(newTime)
+    // remove bookmark------------------------
+    const remainingBookMark = clickedBlog.filter(Bookmark=>Bookmark.id !== id)
+    setClickedBlog(remainingBookMark)
   }
   return (
     <>

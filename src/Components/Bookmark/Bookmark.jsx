@@ -20,8 +20,8 @@ const Bookmark = ({ clickedBlog, timeOfBlog }) => {
           
 
             {
-               clickedBlog.map((obj) =>
-                  <div key={obj.id} >
+               clickedBlog.map((obj,index) =>
+                  <div key={index} >
                     
                      <div className="mx-5 my-6 text-center rounded-md bg-slate-50">
                         <h4 className="px-4 py-6 text-lg font-bold" >{obj.title}</h4>
