@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import PropTypes from 'prop-types';
  
 
-const Blogs = ({handleBookMark, allData}) => {
+const Blogs = ({handleBookMark, allData,handleMarkAsRed}) => {
     const [blogs,setBlogs]=useState([])
     useEffect(()=>{
         const dataFetch = async()=>{
@@ -23,6 +23,7 @@ const Blogs = ({handleBookMark, allData}) => {
                 blogs.map(blog=><Blog
                      blog={blog}key={blog.id}
                      handleBookMark={handleBookMark}
+                     handleMarkAsRed={handleMarkAsRed}
                 ></Blog>)
             }
         </main>
@@ -30,6 +31,9 @@ const Blogs = ({handleBookMark, allData}) => {
 };
  Blogs.propTypes={
     // Blogs:PropTypes.array.isRequired,
-    handleBookMark:PropTypes.func.isRequired
+    handleBookMark:PropTypes.func.isRequired,
+    handleMarkAsRed:PropTypes.func.isRequired,
+    allData:PropTypes.array.isRequired
+    
  }
 export default Blogs; 
