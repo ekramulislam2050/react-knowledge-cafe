@@ -5,7 +5,7 @@ const Blog = ({ blog,handleBookMark }) => {
     const { cover_photo, reading_time, author_img, author_name, title, posted_date, hash_tag } = blog
 
     return (
-        <div className='my-10 '>
+        <div className='my-20 '>
             {/* cover photo------------------------ */}
             <div className='w-1/1'>
                 <img className='w-full rounded-lg' src={cover_photo} alt='cover_photo ' />

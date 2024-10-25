@@ -1,11 +1,16 @@
  
 import PropTypes from 'prop-types';
 import Bookmark from '../Bookmark/Bookmark';
-const Bookmarks = ({clickedBlog}) => {
+
+const Bookmarks = ({clickedBlog,allOfData}) => {
    
     return (
-        <aside>
-            <Bookmark clickedBlog={clickedBlog}></Bookmark>
+        <aside >
+            <Bookmark 
+            clickedBlog={clickedBlog}
+             allOfData={allOfData}
+            ></Bookmark>
+           
         </aside>
     );
 };
