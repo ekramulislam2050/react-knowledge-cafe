@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of AI",
+    "author_name": "John Doe",
+    "author_img": "https://i.ibb.co.com/XS3zN8N/boy1.png",
+    "reading_time": "5 min",
+    "hash_tag": ["#technology", "#innovation"],
+    "cover_photo": "https://i.ibb.co.com/Ns442xS/1.jpg",
+    "posted_date": "2024-10-01"
+  },
+  {
+    "id": 2,
+    "title": "Exploring the Universe",
+    "author_name": "Jane Smith",
+    "author_img": "https://i.ibb.co.com/52Ww124/boy2.jpg",
+    "reading_time": "7 min",
+    "hash_tag": ["#science", "#space"],
+    "cover_photo": "https://i.ibb.co.com/8d6YBsM/2.png",
+    "posted_date": "2024-09-28"
+  },
+  {
+    "id": 3,
+    "title": "Healthy Living Tips",
+    "author_name": "Mike Johnson",
+    "author_img": "https://i.ibb.co.com/WFwMWpD/girl1.jpg",
+    "reading_time": "3 min",
+    "hash_tag": ["#lifestyle", "#wellness"],
+    "cover_photo": "https://i.ibb.co.com/C5KfWPV/3.png",
+    "posted_date": "2024-09-30"
+  },
+  {
+    "id": 4,
+    "title": "Boost Your Immunity",
+    "author_name": "Emily Davis",
+    "author_img": "https://i.ibb.co.com/dbm46kj/girl2.jpg",
+    "reading_time": "4 min",
+    "hash_tag": ["#health", "#fitness"],
+    "cover_photo": "https://i.ibb.co.com/dgC3nvW/4.jpg",
+    "posted_date": "2024-10-03"
+  }
+]
