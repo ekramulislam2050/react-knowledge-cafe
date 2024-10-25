@@ -7,17 +7,23 @@ import { useState } from 'react'
 
 
 function App() {
-     const [blog,setBlog]=useState([])
+     const [clickedBlog,setClickedBlog]=useState([])
+   
     const handleBookMark=(blog)=>{
-     setBlog(blog)
+      // console.log(blog)
+     
+      
+      setClickedBlog(blog)
     }
   return (
     <>
       <Header></Header>
      <div className='flex w-4/5 mx-auto'>
         <Blogs handleBookMark={handleBookMark}></Blogs>
-        <Bookmarks blog={blog}></Bookmarks>
-         
+        {/* {
+         clickedBlog.map((clickedBlog,idx)=><Bookmarks clickedBlog={clickedBlog} key={idx}></Bookmarks>)
+        } */}
+         <Bookmarks clickedBlog={clickedBlog} key={clickedBlog.id}></Bookmarks>
      </div>
        
     </>

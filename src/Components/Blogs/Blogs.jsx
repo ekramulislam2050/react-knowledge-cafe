@@ -28,7 +28,7 @@ const Blogs = ({handleBookMark}) => {
     );
 };
  Blogs.propTypes={
-    Blogs:PropTypes.array.isRequired,
+    // Blogs:PropTypes.array.isRequired,
     handleBookMark:PropTypes.func.isRequired
  }
 export default Blogs;
